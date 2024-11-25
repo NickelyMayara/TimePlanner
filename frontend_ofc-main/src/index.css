@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inder&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to right, #020101, #17070A, #240B0F, #47151E, #4F1721);
+    overflow-x: hidden;
+}
+
+.linkNav{
+    color: #D6C3C3;
+    font-family: "Inder", sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    margin-right: 50px;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.linkNav:hover{
+        cursor: pointer;
+        color: #BC8F8F;
+        font-size: 17px;
+}
+
+.linkLogo{
+    text-decoration: none;
+}
