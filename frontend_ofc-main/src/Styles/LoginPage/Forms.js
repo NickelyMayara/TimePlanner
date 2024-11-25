@@ -23,6 +23,13 @@ export const ButtonSubmit = styled.button`
     border: transparent;
     border-radius: 10px;
     font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+
+    &:hover{
+        background-color: #370404;
+        opacity: 100%;
+    }
 `
 export const ErroText = styled.p`
     font-size: clamp(10px, 1em + 4vw, 13px);

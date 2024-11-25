@@ -5,4 +5,10 @@ const conn = new Sequelize("timeplanner", "root", "nmDev77!.", {
     dialect: 'mysql'
 })
 
+if(!conn){
+    console.log(error)
+}else{
+    console.log('conectado')
+}
+
 export default conn;

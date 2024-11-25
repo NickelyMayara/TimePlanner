@@ -12,10 +12,9 @@ export const login = async (req, res) => {
             return res.status(400).json({ message: 'Funcionário não encontrado' });
         }
 
-        const validaSenha = await bcrypt.compare(senha, funcionario.senha);
-        console.log("senha", senha, "compara:", funcionario.senha)
-        if (!validaSenha) {
-            return res.status(400).json({ message: 'Senha incorreta' });
+        console.log(`Senha armazenada: ${funcionario.senha}`) 
+        if (senha !== funcionario.senha) { console.log('Senha incorreta') 
+            return res.status(400).json({ message: 'Senha incorreta' })
         }
 
         res.status(200).json({ message: 'Acessado!' });

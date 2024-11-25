@@ -11,14 +11,14 @@ const Forms = ({ ...props }) => {
     const handleLogin = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:3333/login/validar', { identificador, senha })
+            const response = await axios.post('http://localhost:3333/login/validar', { identificador, senha });
             if (response.status === 200) {
-                window.location.href = '/paginaInicial'
+                window.location.href = '/paginaInicial';
             }
         } catch (err) {
             setError('⚠️ Não foi possível encontrar o usuário!');
-            // setTimeout(() => { window.location.reload(); }, 3000);
-            console.error(err)
+            setTimeout(() => { window.location.reload(); }, 2000)
+            console.error(err);
         }
     };
 
