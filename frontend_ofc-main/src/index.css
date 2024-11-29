@@ -2,16 +2,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Inder&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
 
 
-body{
+body {
     margin: 0;
     padding: 0;
     background-image: linear-gradient(to right, #020101, #17070A, #240B0F, #47151E, #4F1721);
     overflow-x: hidden;
+    box-sizing: border-box;
+    font-family: 'Julius Sans One', 'sans-serif';
+
+    @media (max-width: 768px) {
+
+        align-items: center;
+    }
 }
 
-.linkNav{
+.linkNav {
     color: #D6C3C3;
     font-family: "Inder", sans-serif;
     font-size: 15px;
@@ -21,12 +29,47 @@ body{
     text-decoration: none;
 }
 
-.linkNav:hover{
-        cursor: pointer;
-        color: #BC8F8F;
-        font-size: 17px;
+.linkNav:hover {
+    cursor: pointer;
+    color: #BC8F8F;
+    font-size: 17px;
 }
 
-.linkLogo{
+.linkLogo {
     text-decoration: none;
+}
+
+
+
+
+.Flex {
+    display: flex;
+}
+
+.MeioDosite .Flex {
+    gap: 500px;
+
+}
+
+.topoDoSite .Flex {
+    gap: 500px;
+    align-items: center;
+    justify-content: center;
+    padding: 2% 5%;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .topoDoSite .Flex {
+        gap: 30px;
+        flex-direction: column;
+    }
+
+    .MeioDoSite .Flex {
+        gap: 30px;
+        flex-direction: column;
+    }
 }
